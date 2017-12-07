@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cz10000_001.mytestapp.AActivity">
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="change"
+        android:text="打开 B 界面"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.example.cz10000_001.mytestapp.view.EditClearText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@null"
+        android:hint="请输入商品名称"
+        android:minHeight="32dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:drawablePadding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        app:ect_background_color="@android:color/holo_blue_dark"
+        app:ect_background_corners="45dp"
+        app:ect_icon_right="@drawable/clearall"
+        app:ect_background_store_color="@android:color/black"
+        app:ect_background_store_size="2dp"/>
+
+</LinearLayout>
