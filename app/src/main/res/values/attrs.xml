@@ -33,4 +33,10 @@
             <attr name="ect_background_store_size" format="reference|dimension" />
         </declare-styleable>
 
+
+
+    <attr name="CustomViewRightPadding" format="dimension"></attr>
+        <declare-styleable name="SlidMenu">
+             <attr name="CustomViewRightPadding"></attr>
+        </declare-styleable>
 </resources>

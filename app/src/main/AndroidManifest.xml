@@ -23,6 +23,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 允许读取手机状态 用于创建BmobInstallation -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -45,9 +46,7 @@
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity android:name=".TestNavi2Activity" />
         <activity android:name=".TestActivity1" />
-        <activity android:name=".TestActivity2">
-
-        </activity>
+        <activity android:name=".TestActivity2" />
         <activity android:name=".TestActivity3" />
         <activity android:name=".TestopglActivity" />
         <activity android:name=".TestIndicatorActivity" />
@@ -58,18 +57,23 @@
         <activity android:name=".AliPayActivity" />
         <activity android:name=".TSDrawActivity" />
         <activity android:name=".SpanableStringActivity" />
-        <activity android:name=".AActivity" >
+        <activity android:name=".AActivity" />
+        <activity android:name=".BActivity" />
+        <activity android:name=".CActivity" />
+        <activity android:name=".TestDpActivity" />
+        <activity android:name=".kt.TestKtActivity" />
+        <activity android:name=".kt.TestKt1Activity" />
+        <activity android:name=".kt.Testkt2Activity">
 
         </activity>
-        <activity android:name=".BActivity" >
+        <activity android:name=".kt.TestAnotherActivity" />
+        <activity android:name=".TestDrawFragmentActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".CActivity"/>
     </application>
 
 </manifest>

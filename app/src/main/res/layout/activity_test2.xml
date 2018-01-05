@@ -22,5 +22,18 @@
         android:hint="请输入您的名字"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_82"
+        android:text="北京欢迎你"
+        android:textSize="20sp"
+        android:textColorHighlight="@color/main_color"
+
+        />
+
+    <!--  android:shadowColor="@color/red"
+        android:shadowRadius="15"
+        这两个属性 结合使用  给TextView中的文字添加了阴影 类似打码功能-->
 
 </LinearLayout>

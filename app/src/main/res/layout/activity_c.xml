@@ -8,15 +8,65 @@
     tools:context="com.example.cz10000_001.mytestapp.AActivity">
 
 
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+    <com.example.cz10000_001.mytestapp.view.MyFlowLayout
+        android:id="@+id/myflow"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="change"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温柔女神"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="御姐"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性感哈"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冰清玉洁"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈萨克斯坦吉尔吉斯斯坦"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈萨克斯坦吉尔吉斯斯坦"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈萨克斯坦吉尔吉斯斯坦"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="呀哈哈哈"
+              />
+    </com.example.cz10000_001.mytestapp.view.MyFlowLayout>
 </LinearLayout>
