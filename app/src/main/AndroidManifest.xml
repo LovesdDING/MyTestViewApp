@@ -63,11 +63,12 @@
         <activity android:name=".TestDpActivity" />
         <activity android:name=".kt.TestKtActivity" />
         <activity android:name=".kt.TestKt1Activity" />
-        <activity android:name=".kt.Testkt2Activity">
+        <activity android:name=".kt.Testkt2Activity"></activity>
+        <activity android:name=".kt.TestAnotherActivity" />
+        <activity android:name=".TestDrawFragmentActivity">
 
         </activity>
-        <activity android:name=".kt.TestAnotherActivity" />
-        <activity android:name=".TestDrawFragmentActivity" >
+        <activity android:name=".TestLevelProgressActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

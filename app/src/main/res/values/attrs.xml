@@ -39,4 +39,18 @@
         <declare-styleable name="SlidMenu">
              <attr name="CustomViewRightPadding"></attr>
         </declare-styleable>
+
+
+
+    <!--自定义 levelProgressBar  属性-->
+    <declare-styleable name="LevelProgressBar">
+        <attr name="levelTextSize" format="dimension"/>
+        <attr name="levelTextChooseColor" format="color"/>
+        <attr name="levelTextUnChooseColor" format="color"/>
+        <attr name="progressStartColor" format="color"/>
+        <attr name="progressEndColor" format="color"/>
+        <attr name="progressBgColor" format="color"/>
+        <attr name="progressHeight" format="dimension"/>
+    </declare-styleable>
+
 </resources>
