@@ -2,6 +2,7 @@ package com.example.cz10000_001.mytestapp.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
 /**
@@ -19,6 +20,11 @@ public class DpUtil {
     public static float dp2px(Context context, float dp) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return dp * scale + 0.5f;
+    }
+
+    // dp  转换成px  int型
+    public static int dpToPx(int dp) {
+        return (int) (dp * Resources.getSystem().getDisplayMetrics().density);
     }
 
     /**

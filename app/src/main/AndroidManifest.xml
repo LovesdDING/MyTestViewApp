@@ -24,6 +24,10 @@
     <!-- 允许读取手机状态 用于创建BmobInstallation -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 设置使用opengl es 2.0版本  3.0版本对应0x00030000  3.1版本对应 0x00030001 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -63,12 +67,42 @@
         <activity android:name=".TestDpActivity" />
         <activity android:name=".kt.TestKtActivity" />
         <activity android:name=".kt.TestKt1Activity" />
-        <activity android:name=".kt.Testkt2Activity"></activity>
+        <activity android:name=".kt.Testkt2Activity" />
         <activity android:name=".kt.TestAnotherActivity" />
-        <activity android:name=".TestDrawFragmentActivity">
+        <activity android:name=".TestDrawFragmentActivity" />
+        <activity android:name=".TestLevelProgressActivity" />
+        <activity android:name=".TestGalleryRvActivity" />
+        <activity android:name=".MyWallPageActivity" />
+        <!-- 配置视频壁纸的service -->
+        <service
+            android:name=".wallpager.VideoWallPager"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:process=":wallpaper">
+
+            <!-- 为实时壁纸配置intent-filter -->
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <!-- 为实时壁纸配置meta-data -->
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" />
+        </service>
+
+        <!-- 基本图形 opengl实现 -->
+        <activity android:name=".TestGlActivity" />
+
+        <!-- 图片处理  冷色调 暖色调 放大镜 纹理 模糊 黑白 -->
+        <activity android:name=".PictureProcessActivity"></activity>
+
+        <!-- 图形转换 通过矩阵实现图形 平移 旋转 缩放 -->
+        <activity android:name=".VaryActivity">
 
         </activity>
-        <activity android:name=".TestLevelProgressActivity">
+
+        <!--VR 实现天空球 效果 需要传感器 -->
+        <activity android:name=".VRContextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

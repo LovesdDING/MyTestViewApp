@@ -53,4 +53,11 @@
         <attr name="progressHeight" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="gallery_recyclerview">
+        <attr name="helper" format="string">
+            <enum name="LinearySnapHelper" value="0" />
+            <enum name="PagerSnapHelper" value="1" />
+        </attr>
+
+    </declare-styleable>
 </resources>
