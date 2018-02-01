@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cz10000_001.mytestapp">
 
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
     <!-- 允许程序打开网络套接字 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 允许程序访问WiFi网络信息 -->
@@ -94,15 +96,21 @@
         <activity android:name=".TestGlActivity" />
 
         <!-- 图片处理  冷色调 暖色调 放大镜 纹理 模糊 黑白 -->
-        <activity android:name=".PictureProcessActivity"></activity>
+        <activity android:name=".PictureProcessActivity" />
 
         <!-- 图形转换 通过矩阵实现图形 平移 旋转 缩放 -->
-        <activity android:name=".VaryActivity">
+        <activity android:name=".VaryActivity" />
+
+        <!-- VR 实现天空球 效果 需要传感器 -->
+        <activity android:name=".VRContextActivity"></activity>
+
+        <!-- camera 相机预览 -->
+        <activity android:name=".view.camera.CameraActivity">
 
         </activity>
 
-        <!--VR 实现天空球 效果 需要传感器 -->
-        <activity android:name=".VRContextActivity">
+        <!--  显示视频播放的 启动页 -->
+        <activity android:name=".VideoStartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
