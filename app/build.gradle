@@ -17,6 +17,8 @@ android {
         ndk {
             abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
         }
+
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -74,7 +76,9 @@ dependencies {
     // coroutine listeners for anko layouts anko布局的协同监听器
     compile 'org.jetbrains.anko:anko-sdk25-coroutines:0.10.1'
     compile 'org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.1'
-
+    testCompile "org.robolectric:robolectric:3.0"
+    compile "com.squareup.retrofit2:retrofit:2.2.0"
+    compile "com.squareup.retrofit2:converter-gson:2.2.0"
 }
 repositories {
     mavenCentral()

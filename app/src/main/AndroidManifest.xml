@@ -102,21 +102,28 @@
         <activity android:name=".VaryActivity" />
 
         <!-- VR 实现天空球 效果 需要传感器 -->
-        <activity android:name=".VRContextActivity"></activity>
+        <activity android:name=".VRContextActivity" />
 
         <!-- camera 相机预览 -->
-        <activity android:name=".view.camera.CameraActivity">
+        <activity android:name=".view.camera.CameraActivity" />
 
-        </activity>
-
-        <!--  显示视频播放的 启动页 -->
-        <activity android:name=".VideoStartActivity">
+        <!-- 显示视频播放的 启动页 -->
+        <activity android:name=".VideoStartActivity" />
+        <activity android:name=".anim.TestAnim1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".anim.WindowTransitionsActivity" />
+        <activity android:name=".anim.SharedElementActivity" />
+        <activity android:name=".anim.CustomTransitionActivity" />
+        <activity android:name=".anim.CircularRevealActivity" />
+        <activity android:name=".anim.SecondWindowTransActivity" />
+        <activity android:name=".anim.SecondShareElemActivity" />
+        <activity android:name=".anim.SecondCustomTransActivity" />
+        <activity android:name=".aactivity.LoginActivity"></activity>
     </application>
 
 </manifest>

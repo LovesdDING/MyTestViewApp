@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 
 /**
@@ -18,7 +19,8 @@ import android.widget.Toast;
  */
 public class VideoStartActivity extends AppCompatActivity {
 
-    private CustomVideoView customVideo;
+    private CustomVideoView customVideo;   //这里一定要用重写的videoview  否则  视频不能全屏显示
+//    private VideoView customVideo ;
     private Button btnStart;
 
     @Override

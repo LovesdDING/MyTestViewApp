@@ -150,7 +150,7 @@
     <string name="start">"开始"</string>
     <string name="pause">"暂停"</string>
     <string name="stop">"停止"</string>
-    <string name="remove">"删除"</string>
+    <!--<string name="remove">"删除"</string>-->
     <string name="update">"更新"</string>
     <string name="logo_position">logo位置</string>
     <string name="bottom_left">左下</string>
@@ -276,4 +276,7 @@
         <item>@mipmap/beauty12</item>
         <item>@mipmap/beauty13</item>
     </integer-array>
+
+    <string name="error_incorrect_login">Password/Email is incorrect</string>
+    <string name="error_field_required">This field is required</string>
 </resources>
