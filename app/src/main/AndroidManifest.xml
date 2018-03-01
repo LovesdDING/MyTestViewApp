@@ -109,13 +109,7 @@
 
         <!-- 显示视频播放的 启动页 -->
         <activity android:name=".VideoStartActivity" />
-        <activity android:name=".anim.TestAnim1Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".anim.TestAnim1Activity" />
         <activity android:name=".anim.WindowTransitionsActivity" />
         <activity android:name=".anim.SharedElementActivity" />
         <activity android:name=".anim.CustomTransitionActivity" />
@@ -123,7 +117,22 @@
         <activity android:name=".anim.SecondWindowTransActivity" />
         <activity android:name=".anim.SecondShareElemActivity" />
         <activity android:name=".anim.SecondCustomTransActivity" />
-        <activity android:name=".aactivity.LoginActivity"></activity>
+        <activity android:name=".aactivity.LoginActivity" />
+        <!-- 测试 renderscript  模糊图像处理 -->
+        <activity android:name=".rsblur.TestRSActivity" />
+        <activity android:name=".rsblur.WeatherActivity"></activity>
+        <!-- Activity 转场动画测试 5.0+ 及4.X以上的手动实现转场动画 -->
+        <activity android:name=".anim.TestTransferAnimActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".anim.ImageAnimActivity" />
+        <activity android:name=".anim.AnimeManualActivity" />
+        <activity android:name=".anim.DetailActivity" />
+        <activity android:name=".anim.AnimeDetailActivity"></activity>
     </application>
 
 </manifest>

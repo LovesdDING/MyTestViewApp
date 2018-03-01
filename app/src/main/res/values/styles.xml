@@ -35,4 +35,14 @@
         <item name="android:background">#f00</item>
         <item name="android:textColor">#00f</item>
     </style>
+
+    <!--转场动画 图片style-->
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="layout_rowWeight">1</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="android:onClick">imageClick</item>
+    </style>
 </resources>
